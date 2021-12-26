@@ -5,3 +5,69 @@ img {
 body {
   background-color: #86b3b3;
 }
+
+/* @media (min-width 400px) { */
+.burger ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+li a {
+  display: flex;
+  color: #4d6666;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7500;
+}
+
+/* Her er burgermenuen------- */
+
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #4d6666;
+    font-size: 1.4rem;
+  }
+
+  button:hover {
+    color: #ff7500;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+/* Overskifter familie og str. m.m.--------------- */
+
+h3 {
+  font-size: 1.6rem;
+}
