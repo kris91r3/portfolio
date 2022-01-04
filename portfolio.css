@@ -33,24 +33,6 @@ a:hover {
   color: #f0f3a6;
 }
 
-/* Her starter SVG forside med tekst------- */
-
-#screen {
-  width: 100%;
-  aspect-ratio: 16/9;
-  position: relative;
-}
-
-.burger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(SVG/forside.svg);
-  background-size: cover;
-}
-
 /* Her er burgermenuen------- */
 
 .toggle-btn {
@@ -97,17 +79,12 @@ h3 {
   padding: 0.25rem;
 }
 
-h4 {
-  font-size: 0.875rem;
-}
-
 footer {
   list-style-type: none;
   overflow: hidden;
   display: flex;
   padding: 1rem;
   color: #374a4a;
-  font-size: 0.875rem;
 }
 
 @media (min-width: 600px) {
