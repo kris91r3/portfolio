@@ -6,13 +6,18 @@ body {
   background-color: #86b3b3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* @media (min-width 400px) { */
 .burger ul {
   list-style-type: none;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 li a {
@@ -43,6 +48,7 @@ a:hover {
     cursor: pointer;
     color: #4d6666;
     font-size: 1.4rem;
+    padding: 1rem;
   }
 
   button:hover {
@@ -70,4 +76,12 @@ a:hover {
 
 h3 {
   font-size: 1.6rem;
+}
+
+footer {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  padding: 1rem;
+  color: #4d6666;
 }
