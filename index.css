@@ -19,7 +19,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 0.875rem;
 }
 
 li a {
@@ -64,11 +64,10 @@ a:hover {
     display: block;
     min-width: 50px;
     min-height: 50px;
-    font-size: 1.3rem;
     cursor: pointer;
     color: #4d6666;
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   button:hover {
@@ -81,7 +80,6 @@ a:hover {
 
   nav.shown {
     border-top: 1px solid #000;
-    padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
     flex-flow: column;
@@ -95,7 +93,8 @@ a:hover {
 /* Overskifter familie og str. m.m.--------------- */
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1rem;
+  padding: 0.25rem;
 }
 
 footer {
@@ -104,4 +103,11 @@ footer {
   display: flex;
   padding: 1rem;
   color: #374a4a;
+}
+
+@media (min-width: 600px) {
+  h3 {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
 }

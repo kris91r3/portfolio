@@ -21,11 +21,11 @@ function toggleMenu() {
   if (menuShown) {
     // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
     console.log("LUK");
-    btn.textContent = "LUK";
+    btn.textContent = "x";
   } else {
     // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
     console.log("MENU");
-    btn.textContent = "MENU";
+    btn.textContent = "≡";
   }
 }
 
