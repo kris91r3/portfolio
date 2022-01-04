@@ -42,7 +42,7 @@ a:hover {
 }
 
 .burger {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -106,8 +106,10 @@ footer {
   overflow: hidden;
   display: flex;
   padding: 1rem;
-  color: #374a4a;
+  color: #fff;
+  background-color: #374a4a;
   font-size: 0.875rem;
+  opacity: 70%;
 }
 
 @media (min-width: 600px) {
