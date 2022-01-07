@@ -8,7 +8,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 1400px) 1fr;
+  grid-template-columns: 1fr minmax(0, 1300px) 1fr;
   place-content: center;
 }
 
@@ -34,7 +34,6 @@ main section {
 
 li a {
   display: flex;
-
   text-align: center;
 }
 
@@ -90,13 +89,23 @@ a:hover {
   border: 5px solid #f0f3a6;
 } */
 
-.opgave2,
-.opgave3,
-.opgave4,
-.opgave5,
-.opgave6 {
+.temawrapper img {
   border: 5px solid #f0f3a6;
   margin: 10px;
+  border-radius: 25px;
+}
+
+.linkknap {
+  display: flex;
+  background-color: #f0f3a6;
+  color: #374a4a;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25px;
+  width: fit-content;
+  place-content: center;
 }
 
 /* Overskifter familie og str. m.m.--------------- */
@@ -109,15 +118,28 @@ h2 {
 
 h3 {
   font-family: "acme", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 0.25rem;
   color: #374a4a;
+  margin: 10px;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-family: "acme", sans-serif;
+  font-size: 1.4rem;
   padding: 0.25rem;
   color: #374a4a;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  color: #243030;
+  line-height: 1.5;
+  margin: 10px;
 }
 
 footer {
@@ -130,6 +152,16 @@ footer {
   font-size: 0.875rem;
   list-style: none;
 }
+
+/* Fælles kode for alle billeder pånær splashbilledet---- */
+
+.temawrapper img {
+  border: 5px solid #f0f3a6;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+/* Herfra starter alle mediaqueries----------- */
 
 @media (min-width: 600px) {
   .forside_txt h1 {
@@ -177,8 +209,10 @@ footer {
   }
 }
 
+/* Her starter menuen der leder ned til det enkelte tema------- */
+
 @media (min-width: 1000px) {
-  #tema1 {
+  #tema1 .temawrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -210,5 +244,18 @@ footer {
   .opgave6 {
     grid-column: 5/6;
     grid-row: 2/3;
+  }
+
+  /* Her starter tema 2 ---------------- */
+
+  #tema2 .temawrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+  }
+  #tema2 .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
