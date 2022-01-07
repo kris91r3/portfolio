@@ -3,7 +3,7 @@ img {
 }
 
 body {
-  background-color: #86b3b3;
+  background-color: #759c9c;
 }
 
 * {
@@ -13,7 +13,6 @@ body {
 
 /* Navbaren starter her------ */
 
-/* @media (min-width 400px) { */
 .burger ul {
   list-style-type: none;
   background-color: #374a4a;
@@ -21,6 +20,15 @@ body {
   display: flex;
   justify-content: space-evenly;
   /* padding: 0.5rem; */
+}
+
+.forside_txt {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  color: #fff;
+  font-family: "Acme", sans-serif;
+  font-size: 5rem;
 }
 
 li a {
