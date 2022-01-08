@@ -13,6 +13,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1300px) 1fr;
+  place-content: center;
 }
 
 main section {
@@ -30,10 +31,9 @@ main section {
 /* Navbaren starter her------ */
 
 .burger ul {
+  display: flex;
   list-style-type: none;
   background-color: #374a4a;
-  /* overflow: hidden; */
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -207,14 +207,14 @@ footer {
 
 /* Her starter menuen der leder ned til det enkelte tema------- */
 
-@media (min-width: 1050px) {
+@media (min-width: 960px) {
   #tema1 .temawrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-    margin: 150px 80px 150px 80px;
+    margin: 110px 80px 110px 80px;
     /* outline: 2px solid indianred; */
   }
 
