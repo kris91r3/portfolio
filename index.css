@@ -46,19 +46,22 @@ li a {
 a {
   font-family: "acme", sans-serif;
   text-decoration: none;
+  font-size: 1rem;
   color: #fff;
+  padding: 0.25rem;
 }
 
-a:hover {
+a:hover,
+h2:hover {
   color: #f0f3a6;
 }
 
 /* Er lavet til min 1. tema sektions tekst---- */
-a h4 {
+/* a h4 {
   background-color: #374a4a;
   color: #fff;
   padding: 16px;
-}
+} */
 
 .toggle-btn {
   display: none;
@@ -109,10 +112,12 @@ a h4 {
 
 /* Overskifter familie og str. m.m.--------------- */
 
-h2 {
+a h2 {
   font-family: "acme", sans-serif;
   font-size: 1rem;
-  padding: 0.25rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #374a4a;
 }
 
 h3 {
@@ -124,7 +129,7 @@ h3 {
 
 h4 {
   font-family: "acme", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding: 0.25rem;
   color: #374a4a;
   line-height: 1.5;
@@ -161,13 +166,17 @@ footer {
 
 @media (min-width: 600px) {
   .forside_txt h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media (min-width: 600px) {
-  h2 {
-    font-size: 2rem;
-    padding: 0.5rem;
+  a {
+    font-size: 2.5rem;
+    padding: 0.25rem;
+  }
+
+  a h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -207,12 +216,12 @@ footer {
 
 /* Her starter menuen der leder ned til det enkelte tema------- */
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   #tema1 .temawrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     margin: 110px 80px 110px 80px;
     /* outline: 2px solid indianred; */
@@ -246,7 +255,7 @@ footer {
   #tema2 .temawrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
   }
   #tema2 .col {
     display: flex;
