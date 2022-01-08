@@ -1,5 +1,9 @@
 img {
   max-width: 100%;
+  border: 5px solid #f0f3a6;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 body {
@@ -9,11 +13,12 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1300px) 1fr;
-  place-content: center;
 }
 
 main section {
   grid-column: 2/3;
+
+  margin: 10px;
 }
 
 * {
@@ -27,8 +32,9 @@ main section {
 .burger ul {
   list-style-type: none;
   background-color: #374a4a;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -43,13 +49,15 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #f0f3a6;
+}
+
+/* Er lavet til min 1. tema sektions tekst---- */
 a h4 {
   background-color: #374a4a;
   color: #fff;
-}
-
-a:hover {
-  color: #f0f3a6;
+  padding: 16px;
 }
 
 .toggle-btn {
@@ -85,15 +93,7 @@ a:hover {
   font-size: 2rem;
 }
 
-/* #temamenu img {
-  border: 5px solid #f0f3a6;
-} */
-
-.temawrapper img {
-  border: 5px solid #f0f3a6;
-  margin: 10px;
-  border-radius: 25px;
-}
+/* Min knap som fører videre til opgaverne---- */
 
 .linkknap {
   display: flex;
@@ -120,7 +120,6 @@ h3 {
   font-size: 2rem;
   padding: 0.25rem;
   color: #374a4a;
-  margin: 10px;
 }
 
 h4 {
@@ -129,7 +128,7 @@ h4 {
   padding: 0.25rem;
   color: #374a4a;
   line-height: 1.5;
-  margin: 10px;
+  width: fit-content;
 }
 
 p {
@@ -138,7 +137,13 @@ p {
   padding: 0.25rem;
   color: #243030;
   line-height: 1.5;
-  margin: 10px;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 10px;
 }
 
 footer {
@@ -151,14 +156,6 @@ footer {
   font-size: 0.875rem;
   list-style: none;
 }
-
-/* Fælles kode for alle billeder pånær splashbilledet---- */
-
-/* .temawrapper img {
-  border: 5px solid #f0f3a6;
-  margin: 10px;
-  border-radius: 25px;
-} */
 
 /* Herfra starter alle mediaqueries----------- */
 
@@ -210,28 +207,16 @@ footer {
 
 /* Her starter menuen der leder ned til det enkelte tema------- */
 
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
   #tema1 .temawrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    outline: 2px solid indianred;
-
     padding: 10px;
-    margin: 150px 80px 50px 80px;
+    margin: 150px 80px 150px 80px;
+    /* outline: 2px solid indianred; */
   }
-
-  #tema1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* 
-  .opgave2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  } */
 
   .opgave3 {
     grid-column: 2/3;
@@ -240,7 +225,6 @@ footer {
 
   .opgave4 {
     grid-column: 3/4;
-    /* grid-row: 2/3; */
   }
 
   .opgave5 {
@@ -250,7 +234,11 @@ footer {
 
   .opgave6 {
     grid-column: 5/6;
-    /* grid-row: 2/3; */
+  }
+
+  #tema1 img {
+    width: 100%;
+    object-fit: cover;
   }
 
   /* Her starter tema 2 ---------------- */
@@ -258,7 +246,7 @@ footer {
   #tema2 .temawrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 10px;
   }
   #tema2 .col {
     display: flex;
