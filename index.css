@@ -184,7 +184,7 @@ footer {
   }
 
   a h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -232,6 +232,7 @@ footer {
     gap: 20px;
     padding: 10px;
     margin: 90px 120px 90px 120px;
+
     /* outline: 2px solid indianred; */
   }
 
@@ -285,30 +286,35 @@ footer {
   #tema5 .temawrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
   .pilot1 {
     grid-column: 1/2;
-    grid-row: 1/5;
+    grid-row: 1/4;
   }
-  .pilot4 {
-    grid-column: 2/4;
+  .pilot2 {
+    grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  .pilot5 {
+  .pilot3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .pilot4 {
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
+  }
+
+  .pilot5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
   .pilot6 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-
-  .pilot7 {
     grid-column: 3/4;
-    grid-row: 4/5;
+    grid-row: 3/4;
   }
 }
