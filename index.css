@@ -95,13 +95,13 @@ h2:hover {
   font-size: 2rem;
 }
 
-/* Min knap som fører videre til opgaverne---- */
+/* stylingen for alle linkknapperne som fører videre til opgaverne---- */
 
 .linkknap {
   display: flex;
   background-color: #f0f3a6;
   color: #374a4a;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -259,9 +259,10 @@ footer {
     object-fit: cover;
   }
 
-  /* Her starter tema 2 ---------------- */
+  /* Her starter tema 2 og tema3, som er slået sammen---------------- */
 
-  #tema2 .temawrapper {
+  #tema2 .temawrapper,
+  #tema3 .temawrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -271,7 +272,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
-
+  /* 
   #tema3 .temawrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -281,7 +282,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+  } */
 
   #tema5 .temawrapper {
     display: grid;
