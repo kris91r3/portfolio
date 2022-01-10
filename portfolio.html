@@ -13,10 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="burger">
+    <header id="menubar">
       <button class="toggle-btn">≡</button>
       <nav>
         <ul>
@@ -38,13 +42,19 @@
           <div class="opgave2">
             <a href="portfolio.html#tema2"
               ><img src="webp/tema2.webp" alt="splashbillede" />
-              <h2>Grundlæggende web</h2></a
+              <h2>
+                Grundlæggende<br />
+                web
+              </h2></a
             >
           </div>
           <div class="opgave3">
             <a href="portfolio.html#tema3"
               ><img src="webp/tema3.webp" alt="prototype forside" />
-              <h2>Grundlæggende UX</h2></a
+              <h2>
+                Grundlæggende<br />
+                UX
+              </h2></a
             >
           </div>
           <div class="opgave4">
@@ -133,7 +143,7 @@
               href="http://seefeld.dk/kea/02_web/04_responsive/responsive_v2/index.html"
               class="linkknap"
               target="blank"
-              ><h3>Responsive_v2</h3>
+              ><h4>Responsive_v2</h4>
             </a>
           </div>
         </div>
@@ -206,36 +216,137 @@
               <figcaption>Prototype rettet til efter pitch</figcaption>
             </figure>
             <a href="pdf/03_survey.pdf" class="linkknap" target="blank"
-              ><h3>Survey research</h3>
+              ><h4>Survey research</h4>
             </a>
             <a
               href="pdf/03_test_af_prototype.pdf"
               class="linkknap"
               target="blank"
-              ><h3>Test af prototype</h3>
+              ><h4>Test af prototype</h4>
             </a>
             <a
               href="https://docs.google.com/presentation/d/1-7dHJuqq4zsyggg8hrDsX7hMs_JC8GG1updCVRNoF5M/edit?usp=sharing "
               class="linkknap"
               target="blank"
-              ><h3>Pitch med prototype</h3>
+              ><h4>Pitch med prototype</h4>
             </a>
             <a
               href="pdf/03_Feedback fra pitch.pdf"
               class="linkknap"
               target="blank"
-              ><h3>Feedback fra pitch</h3>
+              ><h4>Feedback fra pitch</h4>
             </a>
             <a
               href="https://xd.adobe.com/view/9c56fc59-2c72-4054-86d7-c68769b2a1cc-c905/?fullscreen "
               class="linkknap"
               target="blank"
-              ><h3>Prototype med rettelser</h3>
+              ><h4>Prototype med rettelser</h4>
             </a>
           </div>
         </div>
       </section>
-      <section id="tema4"></section>
+      <section id="tema4">
+        <h3>Tema 4 Grundlæggende animation</h3>
+        <div class="temawrapper">
+          <div class="col">
+            <h4>Overordnede læringsmål</h4>
+            <p>
+              På Tema 4 grundlæggende animation blev vi introduceret til
+              JavaScript, som bliver brugt til at skabe interaktion på et
+              website. Vi udviklede et simpelt spil som vi selv designede fra
+              bunden og kodede det efterfølgende ved brug af CSS-animationer i
+              samspil med JavaScript.
+            </p>
+            <h4>Hvad jeg har lært</h4>
+            <p>
+              På Tema 4. designede jeg et simpelt spil fra bunden ved brug af
+              CSS-animationer i samspil JavaScript. Vi startede med at lære om
+              gamemechanics, der beskriver hvilke krav og regler der er for, at
+              et spil fungerer. Vi gik videre til idéfasen, hvor vi i grupper
+              startede med at finde inspiration til spillet, et eksempel på en
+              metode til at finde idéer til spillet var krydsmetoden, hvor vi
+              skulle udvælge et ord (Verber, setting, ting) fra hver 3 kolonner
+              som kunne danne rammen for spillet. Vi lavede hver især skitser
+              med en scene og de figur-elementer der skulle indgå i spillet og
+              efterfølgende lavede vi en papirprototype af spillet, som viste
+              både antal liv, tiden, point og hvordan spil-animationerne skulle
+              udfolde sig. Vi lærte om karakterdesign, som vi kunne gøre brug af
+              i vores design, det kunne fx være solid drawing, asymmetri,
+              babybias. Vi lærte at rentegne vores skitser af vores
+              spilelementer i illustrator i vektor ud fra lukkede former. Vi
+              tegnede vores baggrundsdesign, figur- og UI-elementer ud fra
+              grundlæggende komposition og layout principper. Vi lærte at lave
+              et aktivitetsdiagram som beskriver, hvordan spillet ville forløbe,
+              senere udvidede vi det til et state-machine diagram som er mere
+              detaljeret. State-machine diagrammet vi kunne bruge til at se,
+              hvordan de forskellige states er forbundet og hvordan de udspiller
+              sig.Vi startede med at opsætte i HTML som vi har lært og derfra
+              gik vi videre til CSS hvor vi indsatte alle vores spil-elementer
+              som svg’er. I CSS’en lavede jeg de animationer, jeg havde valgt
+              skulle være i med mit spil og med JavaScript fik jeg dem til at
+              udføre den valgte handling.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Vi lavede en webside med en assetliste og et dokumentationssite
+              til at dokumentere hele vores proces. Da spillet var
+              færdigproduceret, var der til slut en fernisering for vores
+              grupper. Her havde vi hver især lavet en en survey, som sammen med
+              spillet skulle afprøves og besvares. Ud fra den feedback vi fik på
+              vores spil, kunne vi eventuelt rette til, hvis der var noget der
+              ikke fungerede.
+            </p>
+            <h4>Eksempel fra processen</h4>
+            <p>
+              Jeg har valgt at tage et eksempel fra mit spil, hvor jeg bruger
+              JavaScript. Jeg har valgt at beskrive hvordan animationerne
+              udfolder sig for en af mine brikker, i det her tilfælde brikken
+              Ond1. Jeg har valgt at tage udgangspunkt i funktionen startSpil,
+              hvor vi med classList. tilføjer vores animation som jeg har lavet
+              i CSS med @keyframes. I mit tilfælde falder min brik, så jeg
+              tilføjede ”falling”, som får min brik til at falde oppefra og ned.
+            </p>
+            <img
+              src="webp/spilskaerm.webp"
+              alt="spilside med faldende brikker"
+            />
+            <p>
+              Med addEventListener har jeg tilføjet 2 forskellige events, den
+              først er animationiteration, der fortæller hvor mange gange
+              animationen skal køre. Jeg har i min CSS skrevet den skal køre
+              uendeligt. Det andet event er mousedown, som betyder at handlingen
+              sker, når man klikker musen ned. Når en animation er udført,
+              kaldes den funktion, der står i samme parentes. Det betyder fx, at
+              når vi har klikket mousedown, kaldes i det her tilfælde funktionen
+              clickOndHandler.
+            </p>
+          </div>
+          <div class="col">
+            <img src="jpg/javascript1.jpg" alt="startspil funktionen" />
+            <p>
+              I funktionen clickOndHandler bruger jeg removeEventListener på
+              samme måde som addEventListener, men denne gang fjernes mousedown,
+              vi bliver efterfølgende i samme funktion. Nu starter de
+              animationer, der forløber efter mousedown eventet er færdigt. Med
+              document.querySelector ("#ond").play(); kalder jeg den lyd, jeg
+              har lavet til min brik og med .play afspiller den. Med
+              classList.add. ”frys” på min container fryser min brik og med en
+              classList med add. ”drej” på min sprite begynder brikken at rotere
+              og forsvinde. Den efterfølgende add.EventListener med eventet
+              animationend fortæller os at animationen er slut og sender os
+              videre til funktionen ondReset.
+            </p>
+            <img src="jpg/javascript2.jpg" alt="ondHandler funktionen" />
+            <a
+              href="http://www.seefeld.dk/kea/04_animation/spil/index.html"
+              class="linkknap"
+              target="blank"
+              ><h4>Temaopgave</h4>
+            </a>
+          </div>
+        </div>
+      </section>
       <section id="tema5">
         <h3>Grundlæggende indhold</h3>
         <div class="temawrapper">
@@ -316,13 +427,13 @@
               href="https://kris91r3.github.io/pilotprojekt/"
               class="linkknap"
               target="blank"
-              ><h3>Website med pilotvideo</h3>
+              ><h4>Website med pilotvideo</h4>
             </a>
             <a
               href="https://loving-mayer-45c479.netlify.app/?fbclid=IwAR2_SeIqmNVTapPuYn_7HprQ_0zLmWUK3ppxp-2po9TVxA7PIXvMn_xK0aM"
               class="linkknap"
               target="blank"
-              ><h3>Redesignet website</h3>
+              ><h4>Redesignet website</h4>
             </a>
           </div>
           <div class="pilot6">
@@ -330,7 +441,7 @@
               href="pdf/05_Dokumentations dokument.pdf"
               class="linkknap"
               target="blank"
-              ><h3>Dokumentations dokument</h3>
+              ><h4>Dokumentations dokument</h4>
             </a>
           </div>
         </div>

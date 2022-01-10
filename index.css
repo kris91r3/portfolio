@@ -2,8 +2,6 @@ img {
   max-width: 100%;
   border: 5px solid #f0f3a6;
   border-radius: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 body {
@@ -12,7 +10,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 1300px) 1fr;
+  grid-template-columns: 1fr minmax(0, 1400px) 1fr;
   place-content: center;
 }
 
@@ -21,11 +19,13 @@ main section {
   padding: 0.1px;
 }
 
+#tema2,
 #tema3,
 #tema4,
 #tema5,
 #tema6 {
-  margin: 90px 10px 90px 10px;
+  padding: 0.1px;
+  margin: 100px 10px 100px 10px;
 }
 
 * {
@@ -36,7 +36,7 @@ main section {
 
 /* Navbaren starter her------ */
 
-.burger ul {
+#menubar ul {
   display: flex;
   list-style-type: none;
   background-color: #374a4a;
@@ -57,13 +57,16 @@ a {
   padding: 0.25rem;
 }
 
+/* Hover til navn og til links----- */
 a:hover,
 h2:hover {
   color: #f0f3a6;
 }
-a h3:hover {
+a h4:hover {
   color: #ff7500;
 }
+
+/* Burgermenu knappen skjules ved større skærm---- */
 
 .toggle-btn {
   display: none;
@@ -104,34 +107,35 @@ a h3:hover {
   display: flex;
   background-color: #f0f3a6;
   color: #374a4a;
-  padding: 8px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   border-radius: 25px;
   width: fit-content;
 }
+
 /* Overskifter familie og str. m.m.--------------- */
 
 a h2 {
   font-family: "acme", sans-serif;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 16px;
   color: #fff;
   background-color: #374a4a;
+  width: 100%;
 }
 
 h3 {
   font-family: "acme", sans-serif;
   font-size: 2rem;
-  padding: 0.25rem;
+  padding: 10px;
   color: #374a4a;
 }
 
 h4 {
   font-family: "acme", sans-serif;
   font-size: 1.5rem;
-  padding: 0.25rem;
+  padding: 10px;
   color: #374a4a;
   line-height: 1.5;
   width: fit-content;
@@ -140,9 +144,9 @@ h4 {
 p {
   font-family: "Lora", serif;
   font-size: 1.2rem;
-  padding: 0.25rem;
-  color: #243030;
-  line-height: 1.5;
+  padding: 10px;
+  color: #222e2e;
+  line-height: 1.7;
 }
 
 figcaption {
@@ -179,14 +183,16 @@ footer {
     font-size: 5rem;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   a {
     font-size: 2.5rem;
-    padding: 0.25rem;
+    padding: 10px;
   }
 
   a h2 {
     font-size: 1.5rem;
+    width: fit-content;
+    margin: 10px;
   }
 }
 
@@ -226,65 +232,41 @@ footer {
 
 /* Her starter menuen der leder ned til det enkelte tema------- */
 
-@media (min-width: 1000px) {
+@media (min-width: 1020px) {
   #tema1 .temawrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-    margin: 90px 120px 90px 120px;
-
-    /* outline: 2px solid indianred; */
+    gap: 10px;
   }
-
-  .opgave3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
+  #tema1 .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-
-  .opgave4 {
-    grid-column: 3/4;
-  }
-
-  .opgave5 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-
-  .opgave6 {
-    grid-column: 5/6;
-  }
-
-  #tema1 img {
-    width: 100%;
-    object-fit: cover;
+  #tema1 {
+    padding: 0.1px;
+    margin: 200px 10px 100px 10px;
   }
 
   /* Her starter tema 2 og tema3, som er slået sammen---------------- */
 
   #tema2 .temawrapper,
-  #tema3 .temawrapper {
+  #tema3 .temawrapper,
+  #tema4 .temawrapper,
+  #om_mig .migwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
-  #tema2 .col {
+
+  #tema4 .col,
+  #tema2 .col,
+  #tema3 .col,
+  #om_mig .col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  /* 
-  #tema3 .temawrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-  #tema3 .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
 
   #tema5 .temawrapper {
     display: grid;
@@ -292,6 +274,7 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
+
   .pilot1 {
     grid-column: 1/2;
     grid-row: 1/4;
