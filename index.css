@@ -245,7 +245,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* place-items: center; */
   }
   #tema1 {
     padding: 0.1px;
@@ -306,5 +305,17 @@ footer {
   .pilot6 {
     grid-column: 3/4;
     grid-row: 3/4;
+  }
+
+  #tema6 .temawrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #tema6 .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
   }
 }
