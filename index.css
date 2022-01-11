@@ -17,6 +17,7 @@ main {
 main section {
   grid-column: 2/3;
   padding: 0.1px;
+  margin: 10px;
 }
 
 #tema2,
