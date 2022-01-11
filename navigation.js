@@ -1,33 +1,32 @@
-// Lav en variabel, der refererer til ".toggle-btn"
+// Variabler der refererer til henholdsvis ".toggle-btn" og nav
 const btn = document.querySelector(".toggle-btn");
-// Lav en variabel, der refererer til "nav"
+
 const nav = document.querySelector("nav");
 
-// Lav en function, der hedder toggleMenu()
+// Function, der hedder toggleMenu()
 function toggleMenu() {
-  // 1. Toggle en klasse på nav vha. classList.toggle
+  // 1. Toggle en klasse på nav
   console.log("nav");
-  nav.classList.toggle("banner");
+  nav.classList.toggle("nav");
   // 2. Toggle en klasse, der hedder "shown"
   console.log("shown");
   nav.classList.toggle("shown");
 
-  // 1. Lav en variabel, der hedder menuShown
+  // 1. En variabel, der hedder menuShown, som er lig med nav (variablen), hvis den indeholder klassen "shown" (classList.contains(""))
 
-  // 2. Den skal være lig med, om nav-variablen indeholder klassen "shown" vha. classList.contains("")
   const menuShown = nav.classList.contains("shown");
   // 1. Lav en if/else sætning => if (...) {...} else {...}
   // 2. Spørg om menu i if-sætningen => if (menu)
   if (menuShown) {
-    // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
-    console.log("LUK");
+    // hvis nav har klassen "shown" (burgermenuen er åbnet), sæt da btn.textContent (sætter alt text for btn og dens efterkommere) til "X"
+    console.log("X");
     btn.textContent = "x";
   } else {
-    // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
-    console.log("MENU");
+    // hvis IKKE nav har klassen "shown" (burgermenuen er lukket), sæt da btn.textContent til "≡"
+    console.log("≡");
     btn.textContent = "≡";
   }
 }
 
-/* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
+/* klik-event til btn, der sætter toggleMenu-funktionen i gang */
 btn.addEventListener("click", toggleMenu);

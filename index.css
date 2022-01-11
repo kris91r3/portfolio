@@ -38,6 +38,8 @@ main section {
 
 #menubar ul {
   display: flex;
+  position: sticky;
+  top: 0;
   list-style-type: none;
   background-color: #374a4a;
   flex-direction: row;
@@ -232,16 +234,18 @@ footer {
 
 /* Her starter menuen der leder ned til det enkelte tema------- */
 
-@media (min-width: 1020px) {
+@media (min-width: 1150px) {
   #tema1 .temawrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+
     gap: 10px;
   }
   #tema1 .col {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* place-items: center; */
   }
   #tema1 {
     padding: 0.1px;
